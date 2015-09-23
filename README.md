@@ -175,3 +175,83 @@ void _tmain(int argc, _TCHAR* argv[])
 	}
 }
 
+
+
+
+
+
+
+
+//pc.h
+
+#pragma once 
+#include "technik.h" 
+ 
+class Tovar : 
+  public PC 
+{ 
+  int zarplata; 
+ 
+public: 
+  PC(void); 
+  void setzarplata( int zarplata); 
+  void getzarplata(); 
+ 
+  ~PC(void); 
+}; 
+
+
+//planshet.h
+
+#pragma once 
+#include "technik.h" 
+ 
+class Tovar : 
+  public Planshet
+{ 
+  int zarplata; 
+ 
+public: 
+  Planshet(void); 
+  void setzarplata( int zarplata); 
+  void getzarplata(); 
+ 
+  ~Planshet(void); 
+}; 
+
+//print_ustroistvo.h
+
+#pragma once 
+#include "pc.h" 
+ 
+class Tovar : 
+  public Print_ustroistvo
+{ 
+  int zarplata; 
+ 
+public: 
+  Print_ustroistvo(void); 
+  void setzarplata( int zarplata); 
+  void getzarplata(); 
+ 
+  ~Print_ustroistvo(void); 
+}; 
+
+
+//scanner.h
+
+#pragma once 
+#include "pc.h" 
+ 
+class Tovar : 
+  public Scanner
+{ 
+  int zarplata; 
+ 
+public: 
+  Scanner(void); 
+  void setzarplata( int zarplata); 
+  void getzarplata(); 
+ 
+  ~Scanner(void); 
+}; 
