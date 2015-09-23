@@ -185,7 +185,7 @@ void _tmain(int argc, _TCHAR* argv[])
 //pc.h
 
 #pragma once 
-#include "technik.h" 
+#include "technika.h" 
  
 class Tovar : 
   public PC 
@@ -204,7 +204,7 @@ public:
 //planshet.h
 
 #pragma once 
-#include "technik.h" 
+#include "technika.h" 
  
 class Tovar : 
   public Planshet
